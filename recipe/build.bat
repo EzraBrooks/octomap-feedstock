@@ -3,6 +3,7 @@ cd build
 
 cmake .. ^
 	  -G "NMake Makefiles" ^
+      -D CMAKE_POLICY_VERSION_MINIMUM=3.5 ^
       -D CMAKE_BUILD_TYPE=Release ^
       -D CMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
       -D CMAKE_PREFIX_PATH=%LIBRARY_PREFIX% ^
